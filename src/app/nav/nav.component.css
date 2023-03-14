@@ -1,0 +1,21 @@
+#nav{
+    height: 300px;
+    width:250px ;
+    background-color: yellow;
+}
+ul{
+    background-color: black;
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0px;
+   
+}
+li{
+    color: blanchedalmond;
+    height: 30px;
+    text-transform: none;
+    
+}
+li:hover{
+    background-color: brown;
+}

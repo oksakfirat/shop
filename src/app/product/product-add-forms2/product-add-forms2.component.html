@@ -1,0 +1,24 @@
+<h3>Yeni Ürün Ekle-Reactive (hasError çalışmıyor çalışmadığı için tamamlanmamış bir sayfadır.)</h3>
+
+<form [formGroup]="productAddForm" (ngSubmit)="add()" class="form-group">
+    <div class="form-group">
+        <input type="text" id="name" formControlName="name" class="form-control" placeholder="Ürün adı">
+        <div class="alert alert-danger">Ürün adı zorunlu</div>
+        <input type="text" id="description" formControlName="description" class="form-control" placeholder="Ürün açıklaması">
+        <div class="alert alert-danger">Ürün açıklaması zorunlu</div>
+        <input type="text" id="imageUrl" formControlName="imageUrl" class="form-control" placeholder="Ürün resmi">
+        <div class="alert alert-danger">Ürün resmi zorunlu</div>
+        <input type="text" id="price" formControlName="price" class="form-control" placeholder="Ürün fiyatı">
+        <div class="alert alert-danger">Ürün fiyatı zorunlu</div>
+        <div class="form-group">
+            <select class="form-control" formControlName="categoryId" id="categoryId" name="categoryId">
+                <option *ngFor="let category of categories" >{{category.name}}</option>
+            </select>
+            <div class="alert alert-danger">Kategori gerekli</div>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="productAddForm.invalid" onclick="add()">
+     Ürün Ekle
+        </button>
+    </div>
+</form>
+

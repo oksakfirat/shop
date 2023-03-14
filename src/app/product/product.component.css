@@ -1,0 +1,17 @@
+.form-control{
+    margin-bottom: 10px;
+}
+.productBox{
+    
+    margin: 10px;
+    
+}
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: scale-down;
+    display: inline-block;
+}
+img:hover{
+    opacity:0.5;
+}
